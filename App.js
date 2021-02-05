@@ -13,6 +13,7 @@ import {
 import axios from "axios";
 import MovieCard from "./MovieCard";
 import Multiselect from "./MultiSelect";
+import API_KEY from './config'
 
 export default function App() {
   const [movies, setMovies] = useState([]);
@@ -25,7 +26,7 @@ export default function App() {
   const [selectedTeams, setSelectedTeams] = useState([]);
 
   const fetchData = () => {
-    const API_KEY = "1cf4e2cd4793c0319a6de5378ced96b3";
+   
     let url;
     let values = [];
     let selecteMoviesString;
